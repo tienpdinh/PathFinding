@@ -25,8 +25,8 @@ void setup() {
 
 void draw() {
   e.render();
-  g.renderPath(goal, OFFSET_X, OFFSET_Y);
+  //g.renderPath(goal, OFFSET_X, OFFSET_Y);
   //g.render(OFFSET_X, OFFSET_Y);
-  agent.update(.001, 1000, false);
+  agent.update(.001, 1000, true);
   agent.render(OFFSET_X, OFFSET_Y);
 }

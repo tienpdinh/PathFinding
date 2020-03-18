@@ -27,7 +27,6 @@ class Edge implements Comparable<Edge> {
     strokeWeight(1);
     line(src.x+offsetX, src.y+offsetY, des.x+offsetX, des.y+offsetY);
     fill(255);
-    text(String.valueOf(edgeLen), (src.x+des.x)/2+offsetX, (src.y+des.y)/2+offsetY);
   }
   public boolean equals(Edge other) {
     return (src.equals(other.src) && des.equals(other.des)) || (src.equals(other.des) && des.equals(other.src));
